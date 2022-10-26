@@ -34,6 +34,13 @@ void task1()
         quotient = firstNumber / secondNumber;
         std::cout << "Iloraz: " << quotient << "\n";
     }
+    else
+    {
+        std::cout << "Dzielenie przez zero!!!\n";
+    }
+
+    std::cout << "Koniec programu\n";
+
 }
 int main()
 {
