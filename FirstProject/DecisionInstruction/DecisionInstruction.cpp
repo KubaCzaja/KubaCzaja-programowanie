@@ -41,9 +41,27 @@ void task1()
 
     std::cout << "Koniec programu\n";
 
+   
 }
+
+void task2()
+{
+    int numberToCheck;
+
+    std::cout << "Podaj liczbe do sprawdzenia:\n";
+    std::cin >> numberToCheck;
+
+    if (numberToCheck > 0)
+        std::cout << "liczba dodatnia\n";
+    else
+        std::cout << "liczba ujemna\n";
+}
+
+
+
 int main()
 {
-    task1();
+  //task1();
+      task2();
 }
 
