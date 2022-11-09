@@ -128,21 +128,21 @@ void task7()
 {
 	int firstNumber, secondNumber, thirdNumber;
 
-	std::cout << "podaj pierwsz¹ liczbê";
+	std::cout << "podaj pierwsza liczbe";
 	std::cin >> firstNumber;
 
-	std::cout << "podaj drug¹ liczbê";
+	std::cout << "podaj druga liczbe";
 	std::cin >> secondNumber;
 
-	std::cout << "podaj trzeci¹ liczbê";
+	std::cout << "podaj trzecia liczbe";
 	std::cin >> thirdNumber;
 
-	if (firstNumber > secondNumber > thirdNumber)
-		std::cout << firstNumber << "pierwsza liczba jest najwiêksza";
-	else if (secondNumber > firstNumber > thirdNumber)
-		std::cout << secondNumber << "druga liczba jest najwiêksza";
-	else if (thirdNumber > secondNumber > firstNumber)
-		std::cout << thirdNumber << "trzecia liczba jest najwiêksza";
+	if (firstNumber > secondNumber && firstNumber > thirdNumber)
+		std::cout << "pierwsza liczba jest najwieksza";
+	else if (secondNumber > firstNumber && secondNumber > thirdNumber)
+		std::cout << "druga liczba jest najwieksza";
+	else if (thirdNumber > secondNumber && thirdNumber > firstNumber)
+		std::cout << "trzecia liczba jest najwieksza";
 
 
 }
