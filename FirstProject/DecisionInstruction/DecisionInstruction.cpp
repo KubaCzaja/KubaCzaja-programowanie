@@ -143,12 +143,12 @@ void task7()
 		std::cout << "druga liczba jest najwieksza";
 	else if (thirdNumber > secondNumber && thirdNumber > firstNumber)
 		std::cout << "trzecia liczba jest najwieksza";
-
-
 }
 
+void task8()
+{
 
-
+}
 
 
 
@@ -159,6 +159,7 @@ int main()
 	//task3();
 	//task4();
 	//task6();
-	task7();
+	//task7();
+	task8();
 }
 
