@@ -93,18 +93,17 @@ void task4()
 	Napisz funkcjê która wczyta liczbê i wyœwietli czy jest ona parzysta czy nie.
 	*/
 
-	int numberToCheck, checkedNumber;
+	int numberToCheck;
 
 	std::cout << "Podaj liczbe do sprawdzenia:\n";
 	std::cin >> numberToCheck;
 
-	checkedNumber = numberToCheck % 2;
+	int rest = numberToCheck % 2;
 
-	if (checkedNumber > 0)
+	if (numberToCheck  %2 == 0)
 		std::cout << "liczba nie jest parzysta";
-
 	else
-		std::cout << "liczba jest parzysta";
+		std::cout << "liczba  jest parzysta";
 
 }
 
@@ -147,19 +146,85 @@ void task7()
 
 void task8()
 {
+	int daynumber;
+	std::cout << "podaj dzieñ tygodnia\n";
+	std::cin >> daynumber;
+
+		switch (daynumber)
+		{
+		case 1:
+			std::cout << "Poniedzia³ek\n";
+			break;
+		case 2:
+			std::cout << "Wtorek\n";
+			break;
+		case 3:
+			std::cout << "Œroda\n";
+			break;
+		case 4:
+			std::cout << "Czwartek\n";
+			break;
+		case 5:
+			std::cout << "Pi¹tek\n";
+			break;
+		case 6:
+			std::cout << "Sobota\n";
+			break;
+		case 0:
+		case 7:
+			std::cout << "Niedziele\n";
+			break;
+		default:
+			std::cout << "B³êdny dzieñ\n";
+		}
+
+
+
+
+}
+
+void task9()
+{
+	int temperature;
+	std::cout << "Podaj temperaturê\n";
+	std::cin >> temperature;
+
+
+
 
 }
 
 
-
 int main()
 {
+
+	setlocale(LC_CTYPE, "polish");
+
+		int numberOfTask;
+		std::cout << "podaj numer zadania\n";
+		std::cin >> numberOfTask;
+
+		switch (numberOfTask)
+		{
+		case 1:
+			task1();
+			break;
+		case 2:
+			task2();
+			break;
+
+
+		}
+	
+
+
 	//task1();
 	//task2();
 	//task3();
 	//task4();
 	//task6();
 	//task7();
-	task8();
+
+	task9();
 }
 
